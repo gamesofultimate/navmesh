@@ -16,7 +16,9 @@ scalar64 = []
 convert = ["mint"]
 
 [dependencies]
-typid  = "1"
+#typid  = "1.1.1"
+#typid  = { path = "../typid" }
+typid = { git = "https://github.com/gamesofultimate/typid.git", branch = "fllr/fix-uuid-on-wasm" }
 petgraph = { version = "0.6", features = ["serde-1"] }
 spade = { version = "1.8", features = ["serde_serialize"] }
 serde = { version = "1", features = ["derive"] }
